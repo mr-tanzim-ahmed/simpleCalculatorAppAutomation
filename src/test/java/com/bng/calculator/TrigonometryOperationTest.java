@@ -8,9 +8,9 @@ public class TrigonometryOperationTest extends BaseTest {
 
     @Test
     public void sineTest() {
-        driver.findElement(By.id("sine")).click();
+        driver.findElement(By.xpath("//android.widget.Button[@text=\"sin\"]")).click();
         driver.findElement(By.id("btn_3")).click();
-        driver.findElement(By.id("btn_0")).click();
+        driver.findElement(By.id("_0p_1")).click();
         driver.findElement(By.id("equal")).click();
         takeScreenshot();
         String result = driver.findElement(By.id("formula")).getText().trim();
@@ -21,9 +21,9 @@ public class TrigonometryOperationTest extends BaseTest {
 
     @Test
     public void cosineTest() {
-        driver.findElement(By.id("cosine")).click();
+        driver.findElement(By.xpath("//android.widget.Button[@text=\"cos\"]")).click();
         driver.findElement(By.id("btn_6")).click();
-        driver.findElement(By.id("btn_0")).click();
+        driver.findElement(By.id("_0p_1")).click();
         driver.findElement(By.id("equal")).click();
         takeScreenshot();
         String result = driver.findElement(By.id("formula")).getText().trim();
@@ -34,14 +34,14 @@ public class TrigonometryOperationTest extends BaseTest {
 
     @Test
     public void tangentTest() {
-        driver.findElement(By.id("tangent")).click();
+        driver.findElement(By.xpath("//android.widget.Button[@text=\"tan\"]")).click();
         driver.findElement(By.id("btn_4")).click();
         driver.findElement(By.id("btn_5")).click();
         driver.findElement(By.id("equal")).click();
         takeScreenshot();
         String result = driver.findElement(By.id("formula")).getText().trim();
         System.out.println("Tangent of 45 degrees is: " + result);
-        Assert.assertEquals(result, "1.0", "Tangent calculation is correct");
+        Assert.assertEquals(result, "1", "Tangent calculation is correct");
         driver.findElement(By.id("btn_clear")).click();
     }
 

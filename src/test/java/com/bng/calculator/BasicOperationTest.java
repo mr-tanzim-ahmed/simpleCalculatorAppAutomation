@@ -102,4 +102,5 @@ public class BasicOperationTest extends BaseTest {
         driver.findElement(By.id("btn_clear")).click();
     }
 
+
 }
