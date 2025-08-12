@@ -88,8 +88,9 @@ public class BasicOperationTest extends BaseTest {
         Assert.assertEquals(rootResult, "5.00", "Root is correct");
         driver.findElement(By.id("btn_clear")).click();
     }
+
     @Test
-    public  void ModulusTest() {
+    public void ModulusTest() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"|x|\"]")).click();
         driver.findElement(By.id("minus")).click();
         driver.findElement(By.id("btn_5")).click();

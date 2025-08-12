@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ExponentialOperationTest extends BaseTest{
+public class ExponentialOperationTest extends BaseTest {
 
     @Test
     public void E_toThePowerOf_X_Test() {
@@ -20,6 +20,7 @@ public class ExponentialOperationTest extends BaseTest{
         Assert.assertEquals(result, "2.0137527075", "Exponential calculation is correct");
         driver.findElement(By.id("btn_clear")).click();
     }
+
     @Test
     public void X_toThePowerOf_Y_Test() {
         driver.findElement(By.id("btn_5")).click();
@@ -33,6 +34,7 @@ public class ExponentialOperationTest extends BaseTest{
         Assert.assertEquals(result, "125", "Power calculation is correct");
         driver.findElement(By.id("btn_clear")).click();
     }
+
     @Test
     public void X_inverse_Test() {
 
@@ -45,6 +47,7 @@ public class ExponentialOperationTest extends BaseTest{
         Assert.assertEquals(result, "0.5", "Inverse calculation is correct");
         driver.findElement(By.id("btn_clear")).click();
     }
+
     @Test
     public void X_square_Test() {
         driver.findElement(By.id("btn_4")).click();

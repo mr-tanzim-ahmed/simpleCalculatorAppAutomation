@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LogarithmicTest extends BaseTest{
+public class LogarithmicTest extends BaseTest {
     @Test
     public void Ln_Test() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"ln\"]")).click();
@@ -19,6 +19,7 @@ public class LogarithmicTest extends BaseTest{
         Assert.assertEquals(result, "2", "Logarithm calculation is correct");
         driver.findElement(By.id("btn_clear")).click();
     }
+
     @Test
     public void Log_Test() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"log\"]")).click();
