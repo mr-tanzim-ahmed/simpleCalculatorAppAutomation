@@ -1,8 +1,13 @@
 # Simple Calculator Automation Test
-App link(https://play.google.com/store/apps/details?id=com.bng.calculator&hl=en)
-Version 3.1.5
+- App link(https://play.google.com/store/apps/details?id=com.bng.calculator&hl=en)
+- Version 3.1.5
 
-Language: Java | Automation: Appium, Selenium | Testing: TestNG | Reporting: ExtentReports | Locator: Appium Inspector | Device: Genymotion (VM)
+- Language: Java 
+- Automation: Appium, Selenium 
+- Testing: TestNG 
+- Reporting: ExtentReports 
+- Locator: Appium Inspector 
+- Device: Genymotion (VM)
 
 
 #File Structure:
