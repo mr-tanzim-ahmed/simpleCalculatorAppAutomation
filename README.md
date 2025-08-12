@@ -5,7 +5,6 @@
 - Language: Java 
 - Automation: Appium, Selenium 
 - Testing: TestNG 
-- Reporting: ExtentReports 
 - Locator: Appium Inspector 
 - Device: Genymotion (VM)
 
