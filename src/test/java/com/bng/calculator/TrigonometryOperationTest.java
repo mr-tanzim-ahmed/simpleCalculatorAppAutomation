@@ -1,4 +1,4 @@
-package com.bng.calculator.bng.calculator;
+package com.bng.calculator;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
@@ -16,6 +16,7 @@ public class TrigonometryOperationTest extends BaseTest {
         String result = driver.findElement(By.id("formula")).getText().trim();
         System.out.println("Sine of 30 degrees is: " + result);
         Assert.assertEquals(result, "0.5", "Sine calculation is correct");
+        driver.findElement(By.id("btn_clear")).click();
     }
 
     @Test
@@ -28,7 +29,9 @@ public class TrigonometryOperationTest extends BaseTest {
         String result = driver.findElement(By.id("formula")).getText().trim();
         System.out.println("Cosine of 60 degrees is: " + result);
         Assert.assertEquals(result, "0.5", "Cosine calculation is correct");
+        driver.findElement(By.id("btn_clear")).click();
     }
+
     @Test
     public void tangentTest() {
         driver.findElement(By.id("tangent")).click();
@@ -39,5 +42,16 @@ public class TrigonometryOperationTest extends BaseTest {
         String result = driver.findElement(By.id("formula")).getText().trim();
         System.out.println("Tangent of 45 degrees is: " + result);
         Assert.assertEquals(result, "1.0", "Tangent calculation is correct");
+        driver.findElement(By.id("btn_clear")).click();
+    }
+
+    @Test
+    public void paiTest() {
+        driver.findElement(By.xpath("//android.widget.Button[@text=\"π\"]")).click();
+        takeScreenshot();
+        String result = driver.findElement(By.id("result")).getText().trim();
+        System.out.println("Value of Pi is: " + result);
+        Assert.assertEquals(result, "3.1415926536", "Pi value is correct");
+        driver.findElement(By.id("btn_clear")).click();
     }
 }

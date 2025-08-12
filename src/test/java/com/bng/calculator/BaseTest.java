@@ -1,4 +1,4 @@
-package com.bng.calculator.bng.calculator;
+package com.bng.calculator;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.apache.commons.codec.binary.Base64;
@@ -6,6 +6,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
 import java.io.File;
@@ -19,6 +20,7 @@ import java.time.Duration;
 
 public class BaseTest {
     AndroidDriver driver;
+
     @BeforeClass
     public void launchAppium() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -30,13 +32,14 @@ public class BaseTest {
         capabilities.setCapability("appium:appActivity", "com.bng.calc.MainActivity");
 
         try {
-            driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"),capabilities);
+            driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
             driver.startRecordingScreen();
         } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
     }
+
     @AfterClass
     public void closeAppium() {
         recordingVideo();
@@ -71,6 +74,7 @@ public class BaseTest {
             throw new RuntimeException(e);
         }
     }
+
     public AndroidDriver getWebDriver() {
         return driver;
     }
