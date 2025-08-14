@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class BasicOperationTest extends BaseTest {
 
-    @Test(priority = 0)
+    @Test
     public void additionTest() {
         driver.findElement(By.id("btn_5")).click();
         driver.findElement(By.id("plus")).click();
@@ -19,7 +19,7 @@ public class BasicOperationTest extends BaseTest {
         driver.findElement(By.id("btn_clear")).click();
     }
 
-    @Test(priority = 1)
+    @Test
     public void minusTest() {
         driver.findElement(By.id("btn_6")).click();
         driver.findElement(By.id("btn_4")).click();
@@ -40,7 +40,7 @@ public class BasicOperationTest extends BaseTest {
         driver.findElement(By.id("btn_clear")).click();
     }
 
-    @Test(priority = 2)
+    @Test
     public void multiplicationTest() {
         driver.findElement(By.id("btn_2")).click();
         driver.findElement(By.id("btn_5")).click();
@@ -56,7 +56,7 @@ public class BasicOperationTest extends BaseTest {
         driver.findElement(By.id("btn_clear")).click();
     }
 
-    @Test(priority = 3)
+    @Test
     public void divisionTest() {
         driver.findElement(By.id("btn_9")).click();
         driver.findElement(By.id("_0p_1")).click();
@@ -72,7 +72,7 @@ public class BasicOperationTest extends BaseTest {
         driver.findElement(By.id("btn_clear")).click();
     }
 
-    @Test(priority = 4)
+    @Test
     public void rootTest() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"√\"]")).click();
         driver.findElement(By.id("btn_2")).click();
@@ -89,7 +89,7 @@ public class BasicOperationTest extends BaseTest {
         driver.findElement(By.id("btn_clear")).click();
     }
 
-    @Test(priority = 5)
+    @Test
     public void ModulusTest() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"|x|\"]")).click();
         driver.findElement(By.id("minus")).click();

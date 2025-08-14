@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LogarithmicTest extends BaseTest {
-    @Test(priority = 0)
+    @Test
     public void Ln_Test() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"ln\"]")).click();
         driver.findElement(By.xpath("//android.widget.Button[@text=\"eˣ\"]")).click();
@@ -20,7 +20,7 @@ public class LogarithmicTest extends BaseTest {
         driver.findElement(By.id("btn_clear")).click();
     }
 
-    @Test(priority = 1)
+    @Test
     public void Log_Test() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"log\"]")).click();
         driver.findElement(By.id("btn_1")).click();

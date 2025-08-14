@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class ExponentialOperationTest extends BaseTest {
 
-    @Test(priority = 0)
+    @Test
     public void E_toThePowerOf_X_Test() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"eˣ\"]")).click();
         driver.findElement(By.id("_0p_1")).click();
@@ -21,7 +21,7 @@ public class ExponentialOperationTest extends BaseTest {
         driver.findElement(By.id("btn_clear")).click();
     }
 
-    @Test(priority = 1)
+    @Test
     public void X_toThePowerOf_Y_Test() {
         driver.findElement(By.id("btn_5")).click();
         driver.findElement(By.xpath("//android.widget.Button[@text=\"xʸ\"]")).click();
@@ -35,7 +35,7 @@ public class ExponentialOperationTest extends BaseTest {
         driver.findElement(By.id("btn_clear")).click();
     }
 
-    @Test(priority = 2)
+    @Test
     public void X_inverse_Test() {
 
         driver.findElement(By.xpath("//android.widget.Button[@text=\"1/x\"]")).click();
@@ -48,7 +48,7 @@ public class ExponentialOperationTest extends BaseTest {
         driver.findElement(By.id("btn_clear")).click();
     }
 
-    @Test(priority = 3)
+    @Test
     public void X_square_Test() {
         driver.findElement(By.id("btn_4")).click();
         driver.findElement(By.xpath("//android.widget.Button[@text=\"x²\"]")).click();

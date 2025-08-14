@@ -19,7 +19,7 @@ public class TrigonometryOperationTest extends BaseTest {
         driver.findElement(By.id("btn_clear")).click();
     }
 
-    @Test(priority = 0)
+    @Test
     public void cosineTest() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"cos\"]")).click();
         driver.findElement(By.id("btn_6")).click();
@@ -32,7 +32,7 @@ public class TrigonometryOperationTest extends BaseTest {
         driver.findElement(By.id("btn_clear")).click();
     }
 
-    @Test(priority = 1)
+    @Test
     public void tangentTest() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"tan\"]")).click();
         driver.findElement(By.id("btn_4")).click();
@@ -45,7 +45,7 @@ public class TrigonometryOperationTest extends BaseTest {
         driver.findElement(By.id("btn_clear")).click();
     }
 
-    @Test(priority = 2)
+    @Test
     public void paiTest() {
         driver.findElement(By.xpath("//android.widget.Button[@text=\"π\"]")).click();
         takeScreenshot();
