@@ -1,27 +1,8 @@
-# Simple Calculator Automation Test
-- App link(https://play.google.com/store/apps/details?id=com.bng.calculator&hl=en)
-- Version 3.1.5
+# Appium 1st Assignment
 
-- Language: Java 
-- Automation: Appium, Selenium 
-- Testing: TestNG 
-- Locator: Appium Inspector 
-- Device: Genymotion (VM)
-
-
-#File Structure:
-<pre><code>
-src
-    └── test
-        ├── java
-            └── com
-            │   └── bng
-            │       └── calculator
-            │           ├── BaseTest.java
-            │           ├── BasicOperationTest.java
-            │           ├── ExponentialOperationTest.java
-            │           ├── LogarithmicTest.java
-            │           └── TrigonometryOperationTest.java
-        └── resources
-            └── regressionSuites.xml
-</code></pre>
+1. Create a repository for Appium Simple calculator in GitHub
+2. commit & push Screen, BaseTest
+3. Please add hiromia006 as collaborator from Setting
+4. Create new branch for Appium Simple calculator with all Test cases
+5. commit & push code
+6. Create a pull request and assigned to hiromia006
